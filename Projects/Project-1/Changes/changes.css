@@ -36,11 +36,13 @@ nav ul li a {
 
 /* About Me section */
 #about-me {
+    background-color: #93B1A6;
     padding: 20px;
 }
 
 /* Projects section */
 #projects {
+    background-color: #93B1A6;
     padding: 20px;
 }
 
