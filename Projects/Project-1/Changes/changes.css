@@ -1,32 +1,63 @@
-/* CSS for your portfolio color scheme */
+/* CSS for your portfolio */
 
-/* Main background color */
+/* Body styles */
 body {
     background-color: #5C8374;
-    color: #040D12; /* Text color */
+    color: #040D12;
+    font-family: Arial, sans-serif; /* Specify your preferred font-family */
 }
 
-/* Header and accenting */
+/* Header styles */
 header {
     background-color: #93B1A6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
 }
 
-/* Navigation links */
-nav ul li a {
-    color: #040D12;
-}
-
-/* Accenting and footer */
+/* Navigation links styles */
 nav ul {
     background-color: #183D3D;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-footer {
-    background-color: #183D3D;
-    color: #040D12; /* Text color */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #040D12;
+    text-decoration: none;
+}
+
+/* About Me section */
+#about-me {
+    padding: 20px;
+}
+
+/* Projects section */
+#projects {
+    padding: 20px;
 }
 
 /* Project article containers */
 article {
-    border: 2px solid #040D12; /* Border color */
+    border: 2px solid #040D12;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #183D3D;
+    color: #040D12;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    /* Add responsive styles here */
 }

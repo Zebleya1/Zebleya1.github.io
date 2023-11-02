@@ -1,0 +1,33 @@
+/* CSS for your portfolio color scheme */
+
+/* Main background color */
+body {
+    background-color: #5C8374;
+    color: #040D12; /* Text color */
+}
+
+/* Header and accenting */
+header {
+    background-color: #93B1A6;
+}
+
+/* Navigation links */
+nav ul li a {
+    color: #040D12;
+}
+
+/* Accenting and footer */
+nav ul {
+    background-color: #183D3D;
+}
+
+footer {
+    background-color: #183D3D;
+    color: #040D12; /* Text color */
+}
+
+/* Project article containers */
+article {
+    border: 2px solid #040D12; /* Border color */
+}
+/* Making it pretty in changes first */
