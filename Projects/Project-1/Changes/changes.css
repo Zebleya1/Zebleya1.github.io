@@ -42,7 +42,27 @@ nav ul li a {
     padding: 20px;
     border: 4px solid #183D3D;
 }
+/* Image and text container styles */
+.about-me-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
 
+/* Image box styles */
+.image-box {
+    background-color: #93B1A6;
+    border: 2px solid #040D12;
+    padding: 20px;
+}
+
+/* Text box styles */
+.text-box {
+    background-color: #93B1A6;
+    border: 2px solid #040D12;
+    padding: 20px;
+    text-align: center;
+}
 /* Projects section */
 #projects {
     background-color: #93B1A6;

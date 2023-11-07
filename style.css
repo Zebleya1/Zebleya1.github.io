@@ -1,32 +1,88 @@
-/* CSS for your portfolio color scheme */
+/* CSS for your portfolio */
 
-/* Main background color */
+/* Body styles */
 body {
     background-color: #5C8374;
-    color: #040D12; /* Text color */
+    color: #040D12;
+    font-family: Arial, sans-serif; /* Specify your preferred font-family */
+    padding: 20px;
 }
 
-/* Header and accenting */
+/* Header styles */
 header {
     background-color: #93B1A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 4px solid #183D3D;
 }
 
-/* Navigation links */
+/* Navigation links styles */
+nav ul {
+    background-color: #93B1A6;
+    list-style: none;
+    padding: 40px;
+    margin: 5px;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-right: 100px;
+}
+
 nav ul li a {
     color: #040D12;
+    text-decoration: double underline #040D12;
+}
+/* START HERE NEXT TIME */
+/* About Me section */
+#about-me {
+    background-color: #93B1A6;
+    padding: 20px;
+    border: 4px solid #183D3D;
+}
+/* Image and text container styles */
+.about-me-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-/* Accenting and footer */
-nav ul {
-    background-color: #183D3D;
+/* Image box styles */
+.image-box {
+    background-color: #93B1A6;
+    border: 2px solid #040D12;
+    padding: 20px;
 }
 
-footer {
-    background-color: #183D3D;
-    color: #040D12; /* Text color */
+/* Text box styles */
+.text-box {
+    background-color: #93B1A6;
+    border: 2px solid #040D12;
+    padding: 20px;
+    text-align: center;
+}
+/* Projects section */
+#projects {
+    background-color: #93B1A6;
+    padding: 20px;
 }
 
 /* Project article containers */
 article {
-    border: 2px solid #040D12; /* Border color */
+    border: 2px solid #040D12;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #183D3D;
+    color: #040D12;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    /* Add responsive styles here */
 }
