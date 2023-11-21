@@ -1,82 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Top of the page information -->
     <header>
-        <h1>Welcome to the Portfolio of Aaron I. Zebley</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </nav>
+      <h1>Welcome to the Portfolio of Aaron I. Zebley</h1>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Request Information</a></li>
+        </ul>
+      </nav>
     </header>
-    <!-- About Me Section -->
-    <section id="about-me">
-        <div class="about-me-container">
+    <section id="picture-of-me">
+        <div class="picture-of-me-container">
             <div class="image-box">
-                <img src="images\aaron.jpg" alt="My Photo" class="profile-photo">
-            </div>
-            <div class="text-box">
-                <h2>About Me</h2>
-                <!-- About me information -->
-                <p>
-                    "Hello! I'm Aaron Zebley, and my journey into the professional world began in the Navy, where I trained as a licensed vocational nurse. My responsibilities included Sensitive Data Input and Administrative documentation, complemented by hands-on patient care.
-
-                    Post-military, I pursued higher education and currently find myself immersed in a coding bootcamp. The transition from utilizing computers both at work and home, coupled with my innate creativity, sparked a genuine passion for coding.
-                    
-                    My goal is to delve deeper into the coding realm, leveraging my skills to contribute to creating streamlined and enjoyable systems for users. I believe my diverse background and dedication make me a valuable asset in adapting to and excelling in the dynamic field of coding."
-                </p>
-                <!-- List of skills -->
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Git</li>
-                    <li>Object-Oriented Programming</li>
-                    <li>Scrum</li>
-                    <li>Spring Boot</li>
-                    <li>Java</li>
-                    <!-- put skills here as i earn them -->
-                </ul>
-            </div>
+                <img src="images\aaron.jpg" alt="My Photo" class="profile-photo" />
+              </div>
         </div>
     </section>
-<section id="projects">
-    <h2>Projects</h2>
-    <nav>
-    <div class="grid">
-        <div><a href="https://github.com/2023-Fall-Java-Cohort/blackjack-Zebleya1.git">Black Jack</a><img src="images/BlackJack.jpg.jpg" alt="Black Jack"></div>
-        <div><a href="https://github.com/2023-Fall-Java-Cohort/car-workshop-template-Zebleya1.git">Car Garage</a><img src="images/CarGarage.jpg.jpg" alt="Car Garage"></div>
-    </div>
-</nav>
-</section>
-<section id="resume" class="form-container">
-    <h2>Resume Request</h2>
+    <!-- About Me Section -->
+    <section id="about-me">
+      <div class="about-me-container">
+        <div class="text-box">
+          <h2>About Me</h2>
+          <!-- About me information -->
+          <p>
+            "Hello! I'm Aaron Zebley, and my journey into the professional world
+            began in the Navy, where I trained as a licensed vocational nurse.
+            My responsibilities included Sensitive Data Input and Administrative
+            documentation, complemented by hands-on patient care. Post-military,
+            I pursued higher education and currently find myself immersed in a
+            coding bootcamp. The transition from utilizing computers both at
+            work and home, coupled with my innate creativity, sparked a genuine
+            passion for coding. My goal is to delve deeper into the coding
+            realm, leveraging my skills to contribute to creating streamlined
+            and enjoyable systems for users. I believe my diverse background and
+            dedication make me a valuable asset in adapting to and excelling in
+            the dynamic field of coding."
+          </p>
+          <!-- List of skills -->
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>Object-Oriented Programming</li>
+            <li>Scrum</li>
+            <li>Spring Boot</li>
+            <li>Java</li>
+            <!-- put skills here as i earn them -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <nav>
+        <div class="grid">
+          <div>
+            <!-- Project 1 -->
+            <a
+              href="https://github.com/2023-Fall-Java-Cohort/blackjack-Zebleya1.git"
+              >Black Jack</a
+            ><img src="images/BlackJack.jpg.jpg" alt="Black Jack" />
+          </div>
+          <!-- Project 2 -->
+          <div>
+            <a
+              href="https://github.com/2023-Fall-Java-Cohort/car-workshop-template-Zebleya1.git"
+              >Car Garage</a
+            ><img src="images/CarGarage.jpg.jpg" alt="Car Garage" />
+          </div>
+          <!-- Project 3 "coming soon" -->
+          <div>
+            <a href="">Work in Progress</a
+            ><img
+              src="images/gaelle-marcel-9DZY0mO98xU-unsplash.jpg"
+              alt="Coming soon..."
+            />
+          </div>
+          <!-- project 4 placeholder
+          <div>
+            <a
+              href="https://github.com/2023-Fall-Java-Cohort/car-workshop-template-Zebleya1.git"
+              >Car Garage</a
+            ><img src="images/CarGarage.jpg.jpg" alt="Car Garage" />
+          </div> -->
+        </div>
+      </nav>
+    </section>
+    <!-- User Information request text -->
+    <section id="resume" class="form-container">
+      <h2>Request Information</h2>
+      <div class="fillable-box">
+        <form action="/submit" method="post">
+          <!-- Name Input -->
+          <label for="nameInput">Name:</label>
+          <input
+            type="text"
+            id="nameInput"
+            name="nameInput"
+            placeholder="Your Name..."
+            maxlength="50"
+          />
 
-    <form action="/submit" method="post">
-    <!-- User resume request text
-    <label for="ghostText"> </label>
-    <input type="text" id="ghostText" name="ghostText" placeholder="Tell me about yourself!">
-    </form>
-</section> -->
+          <!-- Email Input -->
+          <label for="emailInput">Email:</label>
+          <input
+            type="email"
+            id="emailInput"
+            name="emailInput"
+            placeholder="Your Email..."
+            maxlength="50"
+          />
+
+          <!-- Text Box place holder -->
+          <label for="NotesToTheAuthor"> Message: </label>
+          <textarea
+            id="ghostText"
+            name="ghostText"
+            placeholder="Reason for request..."
+            rows="5"
+            maxlength="2500"
+          ></textarea>
+
+          <!-- Submit Button -->
+          <input type="submit" id="submitBtn" value="Submit" />
+        </form>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <h3>Contact Information</h3>
-        <ul>
-            <!-- Contact information  -->
-            <li>Email: zebleya1@gmail.com</li>
-            <li>GitHub: <a href="https://github.com/Zebleya1">Zebleya1</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/aaron-zebley-b36b6016a/">Aaron Zebley</a></li>
-        </ul>
+      <h2>Contact Information</h2>
+      <ul>
+        <!-- Contact information  -->
+        <li>Email: zebleya1@gmail.com</li>
+        <li>GitHub: <a href="https://github.com/Zebleya1">Zebleya1</a></li>
+        <li>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/aaron-zebley-b36b6016a/"
+            >Aaron Zebley</a
+          >
+        </li>
+      </ul>
     </footer>
-</body>
+    <!-- Back to Top Button -->
+    <a href="#top" id="backToTopBtn">Return to Top</a>
+  </body>
 </html>

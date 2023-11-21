@@ -1,38 +1,53 @@
-/* General layout styles */
-.container {
-  display: grid;
-  grid-template-columns: 0.5fr 3fr 0.5fr;
-  grid-template-rows: 0.3fr 2.5fr 0.2fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Header Header Header"
-    "Project-list About-me Image"
-    "Footer Footer Footer";
-}
+
 /* Header styles */
 header {
   background-color: #93b1a6;
+  max-width: 100%;
+  min-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border: 4px solid #183d3d;
+  padding: 1rem , 1rem ;
+  border-radius: 2%;
 }
+  /* Back to Top Button */
+  #backToTopBtn {
+    display: flexbox;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #93b1a6;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #backToTopBtn:target {
+    display: block;
+  }
+    /* Style for smooth scrolling effect */
+    html {
+      scroll-behavior: smooth;
+  }
 /* Body styles */
 body {
   background-color: #5c8374;
+  background-image: url(images/tommy-bond-FMwmvOSkbxQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
   color: #040d12;
   font-family: Arial, sans-serif;
   padding: 20px;
+  text-align: center;
 }
 
 /* Navigation links styles */
 nav ul {
-  background-color: #93b1a6;
   list-style: none;
-  padding: 40px;
-  margin: 5px;
 }
 
 nav ul li {
@@ -47,7 +62,7 @@ nav ul li a {
 
 /* About Me section */
 #about-me {
-  background-color: #93b1a6;
+  background-color: #183d3d;
   padding: 20px;
   border: 4px solid #183d3d;
 }
@@ -62,33 +77,30 @@ nav ul li a {
 
 /* Image box styles */
 .profile-photo {
-  width: 200px; /* Adjust the size as needed */
-  height: 300px; /* Adjust the size as needed */
-  border: 2px solid #040d12;
+  background-color: #183d3d;
+  min-width: fit-content;/* Adjust the size as needed */
+  height: 350px; /* Adjust the size as needed */
+  border: 4rem ridge #040d12  ;
   margin-bottom: 20px; /* Add some space between photo and text */
 }
+/* About me text box */
 .text-box {
   background-color: #93b1a6;
   border: 2px solid #040d12;
   padding: 20px;
   text-align: left;
-
 }
-
-/* Footer styles */
-footer {
-  background-color: #183d3d;
-  color: #040d12;
-  text-align: left;
-  padding: 10px;
+h2 {
+  text-align: center;
+  background-color: #93b1a6;
+  
+  
+  
 }
+/*information found at https://css-tricks.com/snippets/css/complete-guide-grid/#aa-fluid-columns-snippet*/
 
-@media (max-width: 768px) {
-}
-  /*information found at https://css-tricks.com/snippets/css/complete-guide-grid/#aa-fluid-columns-snippet*/
-
-  /* This is better for small screens, once min() is better supported */
-  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+/* This is better for small screens, once min() is better supported */
+/* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -99,7 +111,6 @@ footer {
   background: #040d12;
   padding: 1rem;
   display: grid;
-
 }
 
 .grid > div::before {
@@ -114,5 +125,55 @@ footer {
   height: 100%;
   object-fit: contain;
   grid-area: 1 / 1 / 2 / 2;
-  background-color: #5c8374;
+  background-color: #183d3d;
+}
+
+/* Resume Request section  */
+.form-container {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #93b1a6;
+}
+
+.fillable-box {
+  position: sticky;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
+#submitBtn {
+  background-color: #4caf50;
+  color: rgb(235, 230, 230);
+  padding: 10px 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  max-width: 25%;
+  min-width: 25%;
+  
+}
+
+/* Footer styles */
+footer {
+  background-color: #183d3d;
+  color: #040d12;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
 }
